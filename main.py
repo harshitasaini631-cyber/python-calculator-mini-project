@@ -62,7 +62,11 @@ def main():
             operation = "/"
       
         # Display result  
-        print(f"Result: {num1} {operation} {num2} = {result}")
+        if isinstance(result, (int, float)):
+            print(f"Result: {num1} {operation} {num2} = {round(result, 2)}")
+        else:
+            print(result)
+
         
         # Ask user if they want to continue
         again = input("Do you want to calculate again? (yes/no): ").lower()
