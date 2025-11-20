@@ -52,6 +52,8 @@ def main():
             operation = "/"
 
         print(f"Result: {num1} {operation} {num2} = {result}")
-
-if __name__ == "__main__":
-    main()
+        
+        again = input("Do you want to calculate again? (yes/no): ").lower()
+        if again != "yes":
+            print("Goodbye!")
+            break
