@@ -16,15 +16,20 @@ def divide(a, b):
         return "Error: Cannot divide by zero"
     return a / b
 
+def print_menu():
+    """Print the calculator menu options."""
+    print("\n=== Simple Calculator ===")
+    print("1. Addition")
+    print("2. Subtraction")
+    print("3. Multiplication")
+    print("4. Division")
+    print("5. Exit")
+
+
 def main():
     while True:
         #display menu options
-        print("\n=== Simple Calculator ===")
-        print("1. Addition")
-        print("2. Subtraction")
-        print("3. Multiplication")
-        print("4. Division")
-        print("5. Exit")
+        print_menu()
 
         #take user choice
         choice = input("Enter your choice (1-5): ")
